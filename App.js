@@ -7,3 +7,7 @@ form.addEventListener('submit', e => {
     .then(response => alert("Your Name Saved Successfully"))
     .catch(error => console.error('Error!', error.message))
 })
+
+function reset(){
+    document.getElementById("myForm").reset();
+}
