@@ -10,7 +10,7 @@
 <body>
     <div class="save">
         <h1>Name Form</h1>
-          <form  method="post" name="googleSheetdb">
+          <form  id="myForm" method="post" name="googleSheetdb">
             <input type="text" name="First Name" placeholder="First Name" required="required" />
               <input type="text" name="Last Name" placeholder="Last Name" required="required" />
               <button type="submit" name="submit"  class="btn btn-primary btn-block btn-large">Save</button>
@@ -18,6 +18,11 @@
       </div>
 
       <script src="./App.js"></script>
+      <script>
+        function reset(){
+          document.getElementById("myForm").reset();
+        }
+      </script>
     
 </body>
 </html>
